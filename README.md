@@ -1,5 +1,5 @@
 # 🎛️Polynomial Logistic Regression: Regularized, Small, Numpy
-Hi and welcome everyone. This project is an implementation of logistic regression model using polynomial feature mapping. The objective is to build a simple model to predict userbase purchasing decision, using small dataset (400) and Numpy.<br>
+Hi and welcome! This project is an implementation of logistic regression model using polynomial feature mapping. The modeling process involved simple processing, diagnostics, and testing approach. The objective is to build a model to predict userbase purchasing decision, using small dataset (400) and Numpy.<br>
 
 <img src="https://github.com/luqmancrit/Polynomial-Logistic-Regression-Numpy-/blob/main/images/dev%20set%20-%20loss%20value.png?raw=true" alt="alt text" width="1200" height="350">
 
