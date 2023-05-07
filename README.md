@@ -1,27 +1,66 @@
-# Polynomial Logistic Regression: Simple, Small, Numpy
-Implementation of logistic regression model using polynomial feature mapping. It is designed to be easy to use and modify, with functions for feature mapping, optimization, and evaluation. The code is well-documented and focused on simplicity and efficiency, making it a useful resource for anyone interested in logistic regression models with Numpy.
+# 🎛️Polynomial Logistic Regression: Regularized, Small, Numpy
+Hi and welcome everyone. This project is an implementation of logistic regression model using polynomial feature mapping. The objective is to build a simple model to predict userbase purchasing decision, using small dataset (400) and Numpy.<br>
 
 <img src="https://github.com/luqmancrit/Polynomial-Logistic-Regression-Numpy-/blob/main/images/dev%20set%20-%20loss%20value.png?raw=true" alt="alt text" width="1200" height="350">
 
-## Data Acquisition
-The data can be obtained from a source like Kaggle.
-Note: EDA is not performed. The data is already clean.
+## 📑Motivation
+Business competition is getting crowder every day. Businesses needs to keep striving and be profitable. Understanding and collecting data of demographics of interested buyer from userbase is such a crucial step. It is also crucial for companies to take advantage of the collected data, to understand the pattern of the buying customers.<br>
+
+By building a model to predict userbase purchase, will lead the company to have future advantages of:<br>
+- Precise financial decision.
+- Targeted marketing.
+- Stay competitive and lasts.<br>
+
+Further step of processing, training, and evaluation the model will be explained further below.
+
+## 📋Data Acquisition
+The data can be obtained from a source like Kaggle.<br>
+
 <img src="https://github.com/luqmancrit/Polynomial-Logistic-Regression-Numpy-/blob/main/images/dataset.png?raw=true" alt="alt text" width="400" height="250">
 
-## Data Preprocessing
-1. Since the data has high scale difference, The data has be scaled down to ensure that features are on similar scales and to prevent any one feature from dominating the model.
-2. The dataset clearly shows the decision boundary is polynomial. Polynomial feature mapping be used, which allows for more complex relationships between features and the target variable.
+## 🔎Data Preprocessing
+1. The feature has high scale difference, so the data has be scaled down to ensure that features are on similar scales and to prevent any one feature from dominating the model.
+2. The dataset clearly shows the decision boundary is polynomial. Polynomial feature mapping technique be used, which allows for more complex relationships between features and the target variable.
 
-## Data Splitting
-Split the data into training (60%), dev(20%), and test sets(20%). The training set is used to train the model, the dev set is used to tune hyperparameters and evaluate the model's performance, and the test set is used to assess the final performance of the model.
+## 🔃Data Splitting
+To ensure the model is generalized well and not overfitting, the data will be splitted into three different sets:<br>
+- Training set - 60%
+- Development set - 20%
+- Test set - 20%
 
-## Model Training
+Splitting the data will lead to a faster process of finding the optimal predicition model, since time is a limited source. 
+
+## 🏂Model Training
+A benchmark for desired metrics and parameters has been initialized earlier for further process:
+- Model accuracy: 90-95%.
+- Degree polynomial: 3
+- Learning rate (alpha): 0.01
+- Lambda regularized: 0.1
+
+Result Obtained:<br>
+- Training set accuracy: 85.83%.<br>
+- Desired outcome: Not desired.
+
 <img src="https://github.com/luqmancrit/Polynomial-Logistic-Regression-Numpy-/blob/main/images/train%20set%20-%20loss%20value.png?raw=true" alt="alt text" width="400" height="250">
-1. A desired level of accuracy for the model has been set: 90-95%. 
-2. The initial parameters for the training set has been set. Degree: 3, Alpha: 0.01, Lambda  Regularization: 0.1.
-2. Diagnostic tests be performed to identify any overfitting or underfitting and adjust the model to improve performance on the dev set until the desired accuracy is achieved.
 
-## Model Evaluation
+## 🎿Model Evaluation
+The desired model accuracy is not achieved during training set. The model will be proceed to be evaluated using different feature and metrics:
+
+- Dataset: Development set (20%)
+- Polynomial degree: [ 2, 3, 4 ]
+- Lambda Regularized: [ 0.1, 1 ]
+
+Result: The initial benchmark passed! Model with degree: 2, lambda regularized: 1 accuracy is: 90% 
+
 <img src="https://github.com/luqmancrit/Polynomial-Logistic-Regression-Numpy-/blob/main/images/dev%20set%20-%20loss%20value.png?raw=true" alt="alt text" width="1200" height="350">
-1. Choose the model with the best balance between overfitting and underfitting by evaluating its performance on the dev set.
-2. Finally, use the test set to evaluate the final performance of the chosen model and confirm that it is generalizable to new data.
+
+## 🎯Model Testing
+Overfitting model diagnostics be performed afterwards using test set, to choose a model that generalized well to new data.<br>
+Result: 
+- Test set model accuracy: 95%. 
+- Accuracy gap: +5%
+
+Observation: The test model is generalizing well to new, unseen data, which is the ultimate goal of this prediction model.
+
+## 🪂Conclusion
+As a conclusion, the best generalized well model to predict purchasing behaviour from userbase has been achieved successfully. 
