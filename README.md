@@ -1,2 +1,2 @@
-# Polynomial-Logistic-Regression-Simple-Small-Numpy
+# Polynomial Logistic Regression: Simple, Small, Numpy
 Implementation of logistic regression model using polynomial feature mapping. It is designed to be easy to use and modify, with functions for feature mapping, optimization, and evaluation. The code is well-documented and focused on simplicity and efficiency, making it a useful resource for anyone interested in logistic regression models with Numpy.
