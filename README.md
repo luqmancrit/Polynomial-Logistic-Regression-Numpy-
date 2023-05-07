@@ -63,4 +63,4 @@ Result:
 Observation: The test model is generalizing well to new, unseen data, which is the ultimate goal of this prediction model.
 
 ## 🪂Conclusion
-As a conclusion, the best generalized well model to predict purchasing behaviour from userbase has been achieved successfully. 
+As a conclusion, the best generalized well model to predict user purchasing behaviour with accuracy gap: +5% has been achieved successfully.
