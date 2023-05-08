@@ -32,7 +32,7 @@ To ensure the model is generalized well and not overfittingthe data will be spli
 - Test set=20% 
 
 ## 🎿Model Development
-### Polynomial Degree
+### 🪢Polynomial Degree
 The dataset clearly shows that the decision boundary is non-linear. The degree value to be choose are identified to prevent overfitting model. Below is the earlier finding degree value for decision boundary.
 
 Result: Degree 2, 3 seems generalized well. Further process will be proceeded using degree: 2, 3.
