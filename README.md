@@ -1,5 +1,5 @@
 # 🎛️Polynomial Logistic Regression: Regularized, Small, Numpy
-Hi and welcome! This project is an implementation of logistic regression model using polynomial feature mapping. The modeling process involved simple processing, diagnostics, and testing approach. The objective is to build a model to predict userbase purchasing decision, using small dataset (400) and Numpy.<br>
+Hi and welcome! This project is an implementation of logistic regression model using polynomial feature mapping. The modeling process involved simple processing, diagnosting, and testing approach. The objective is to build a model to predict userbase purchasing decision, using small dataset (400) and Numpy.<br>
 
 <img src="https://github.com/luqmancrit/Polynomial-Logistic-Regression-Numpy-/blob/main/images/dev%20set%20-%20loss%20value.png?raw=true" alt="alt text" width="1200" height="350">
 
@@ -24,18 +24,19 @@ The data can be obtained from a source like Kaggle.<br>
 
 ## 🔃Data Splitting
 To ensure the model is generalized well and not overfitting, the data will be splitted into three different sets:<br>
-- Training set - 60%
-- Development set - 20%
-- Test set - 20%
+- Training set=60%
+- Development set=20%
+- Test set=20%
 
 Splitting the data will lead to a faster process of finding the optimal predicition model, since time is a limited source. 
 
-## 🏂Model Training
+## 🎿Model Development
+### 🏂Model Training
 A benchmark for desired metrics and initial parameters has been set earlier for further process:
 
 Success metrics:
-- Model accuracy: 90-95%.
-- Accuracy gap: 2-3%
+- Model accuracy=90-95%.
+- Accuracy gap=2-3%
 
 Initial Parameters:
 - Alpha: 0.01
@@ -52,7 +53,7 @@ Result Obtained:<br>
 
 <img src="https://github.com/luqmancrit/Polynomial-Logistic-Regression-Numpy-/blob/main/images/train%20set%20-%20loss%20values.png?raw=true" alt="alt text" width="600" height="250">
 
-## 🎿Model Evaluation
+### 🛼Model Evaluation
 The desired model accuracy is not achieved during training set. The model will be proceed to be evaluated using different feature and metrics:
 
 - Dataset: Development set (20%)
@@ -65,13 +66,30 @@ Result: The initial benchmark passed! Model with degree: 2, lambda regularized: 
 
 <img src="https://github.com/luqmancrit/Polynomial-Logistic-Regression-Numpy-/blob/main/images/dev%20set%20-%20loss%20value.png?raw=true" alt="alt text" width="1200" height="350">
 
-## 🎯Model Testing
-Overfitting model diagnostics be performed afterwards using test set, to choose a model that generalized well to new data.<br>
-Result: 
-- Test set model accuracy: 95%. 
+### 🎯Model Testing
+Result:
+- Model accuracy: train=88%, dev=90%, test=95%
 - Accuracy gap: +5%
 
-Observation: The test model is generalizing well to new, unseen data, which is the ultimate goal of this prediction model.
+Observation:
+- The model accuracy on the test set (95%) meets the benchmark for high accuracy. But the accuracy gap between the development and test sets is 5%, which is higher than the desired range of 2-3%.
+- Development model cross training model at iteration 500.
+
+Desired model accuracy: Yes<br>
+Desired accuracy gap: No<br>
+Further development: Fine-tuning.
+
+## 🎚️Fine-tuning
+The fine-tuning process be performed to change hyperparameters, to achieve the desired metrics Hyperparameters to be change are:
+- Lambda regularized: 0.1,0.2,0.4,0.8,1
+- Iteration: 500
+
+Result:
+- Dev set model accuracy=91.25%
+- Test set model accuracy=93.5%
+- Accuracy gap=+2%
+
+Observation: Both desired model accuracy and gap accuracy has achieved!
 
 ## 🪂Conclusion
 As a conclusion, the best generalized well model to predict user purchasing behaviour with accuracy gap: +5% has been achieved successfully.
