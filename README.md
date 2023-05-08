@@ -4,7 +4,9 @@ Hi and welcome! This project is an implementation of logistic regression model u
 <img src="https://github.com/luqmancrit/Polynomial-Logistic-Regression-Numpy-/blob/main/images/train%20set%20-%20loss%20values.png?raw=true" alt="alt text" width="600" height="250">
 
 ## 🔮General Modeling Process
-Below is the general modeling process that will be discussed in this project. Further step of processing, training, and evaluation the model will be explained below.
+Below is the general modeling process that will be discussed in this project. Further step of processing, training, and evaluation the model will be explained below.<br>
+
+<img src="https://github.com/luqmancrit/Polynomial-Logistic-Regression-Numpy-/blob/main/images/general%20modeling.png?raw=true" alt="alt text" width="600" height="250">
 
 ## 📑Motivation
 Business competition is getting crowder every day. Businesses needs to keep striving and be profitable. It is crucial for companies to take advantage of the collected data, to understand the pattern of the buying customers.<br>
