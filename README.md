@@ -22,8 +22,8 @@ The data can be obtained from a source like Kaggle.<br>
 <img src="https://github.com/luqmancrit/Polynomial-Logistic-Regression-Numpy-/blob/main/images/dataset.png?raw=true" alt="alt text" width="400" height="250">
 
 ## 🔎Data Preprocessing
-1. The feature has high scale difference, so the data has be scaled down to ensure that features are on similar scales and to prevent any one feature from dominating the model.
-2. The dataset clearly shows the decision boundary is polynomial. Polynomial feature mapping technique be used, which allows for more complex relationships between features and the target variable.
+- Feature scaling: The feature has high scale difference, so the data has be scaled down to ensure that features are on similar scales and to prevent any one feature from dominating the model.
+- Feature mapping: The dataset clearly shows the decision boundary is polynomial. Polynomial feature mapping technique be used, which allows for more complex relationships between features and the target variable.
 
 ## 🔃Data Splitting
 To ensure the model is generalized well and not overfitting, the data will be splitted into three different sets:<br>
@@ -110,6 +110,8 @@ Result:
 Observation: 
 - Desired model accuracy and gap accuracy passed! 
 - The model generalized well with unseen data which make it a great prediction model.
+
+<img src="https://github.com/luqmancrit/Polynomial-Logistic-Regression-Numpy-/blob/main/images/fine%20tuning%20test%20model%20accuracy.png?raw=true" alt="alt text" width="500" height="150">
 
 ## 🪂Conclusion
 Model Accuracy & Performance Recap:
