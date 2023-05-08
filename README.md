@@ -31,15 +31,21 @@ To ensure the model is generalized well and not overfitting, the data will be sp
 Splitting the data will lead to a faster process of finding the optimal predicition model, since time is a limited source. 
 
 ## 🏂Model Training
-A benchmark for desired metrics and parameters has been initialized earlier for further process:
+A benchmark for desired metrics and initial parameters has been set earlier for further process:
+
+Success metrics:
 - Model accuracy: 90-95%.
-- Degree polynomial: 3
-- Learning rate (alpha): 0.01
+- Accuracy gap: 2-3%
+
+Initial Parameters:
+- Alpha: 0.01
 - Lambda regularized: 0.1
+- Degree polynomial: 1, 2, 3, 4, 5, 6
 
 Result Obtained:<br>
-- Training set accuracy: 85.83%.<br>
-- Desired outcome: Not desired.
+- Degree that possible generalizes: 2, 3 
+- Training set accuracy: 85.83%.
+- Desired model accuracy: Not desired.
 
 <img src="https://github.com/luqmancrit/Polynomial-Logistic-Regression-Numpy-/blob/main/images/train%20set%20-%20loss%20value.png?raw=true" alt="alt text" width="400" height="250">
 
