@@ -26,12 +26,10 @@ The data can be obtained from a source like Kaggle.<br>
 - Feature mapping: The dataset clearly shows the decision boundary is polynomial. Polynomial feature mapping technique be used, which allows for more complex relationships between features and the target variable.
 
 ## 🔃Data Splitting
-To ensure the model is generalized well and not overfitting, the data will be splitted into three different sets:<br>
+To ensure the model is generalized well and not overfittingthe data will be splitted into fraction of sets. Splitting the data will lead to a faster process of finding the optimal predicition model, since time is a limited source. Three different sets:<br>
 - Training set=60%
 - Development set=20%
-- Test set=20%
-
-Splitting the data will lead to a faster process of finding the optimal predicition model, since time is a limited source. 
+- Test set=20% 
 
 ## 🎿Model Development
 ### 🏂Model Training
@@ -80,9 +78,9 @@ Result:
 Observation:
 - The model accuracy on the test set (95%) meets the benchmark for high accuracy. But the accuracy gap between the development and test sets is 5%, which is higher than the desired range of 2-3%.
 - Development model cross training model at iteration 500.
+- Desired model accuracy: Yes<br>
+- Desired accuracy gap: No<br>
 
-Desired model accuracy: Yes<br>
-Desired accuracy gap: No<br>
 Further development: Fine-tuning.
 
 <img src="https://github.com/luqmancrit/Polynomial-Logistic-Regression-Numpy-/blob/main/images/test%20set%20accuracy%201.png?raw=true" alt="alt text" width="500" height="150">
