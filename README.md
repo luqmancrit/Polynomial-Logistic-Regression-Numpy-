@@ -40,21 +40,26 @@ Success metrics:
 Initial Parameters:
 - Alpha: 0.01
 - Lambda regularized: 0.1
+- Iterations: 1000
 - Degree polynomial: 1, 2, 3, 4, 5, 6
 
 Result Obtained:<br>
 - Degree that possible generalizes: 2, 3 
-- Training set accuracy: 85.83%.
+- Training set accuracy:
+  - Degree 2: 87.92%
+  - Degree 3: 85.83%
 - Desired model accuracy: Not desired.
 
-<img src="https://github.com/luqmancrit/Polynomial-Logistic-Regression-Numpy-/blob/main/images/train%20set%20-%20loss%20value.png?raw=true" alt="alt text" width="400" height="250">
+<img src="https://github.com/luqmancrit/Polynomial-Logistic-Regression-Numpy-/blob/main/images/train%20set%20-%20loss%20values.png?raw=true" alt="alt text" width="600" height="250">
 
 ## 🎿Model Evaluation
 The desired model accuracy is not achieved during training set. The model will be proceed to be evaluated using different feature and metrics:
 
 - Dataset: Development set (20%)
-- Polynomial degree: [ 2, 3, 4 ]
-- Lambda Regularized: [ 0.1, 1 ]
+- Polynomial degree: 2, 3
+- Lambda regularized: 0.1, 1
+- Iterations: 1000
+- Alpha: 0.01
 
 Result: The initial benchmark passed! Model with degree: 2, lambda regularized: 1 accuracy is: 90% 
 
