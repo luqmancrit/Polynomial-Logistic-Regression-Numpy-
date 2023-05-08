@@ -1,7 +1,7 @@
 # 🎛️Polynomial Logistic Regression: Regularized, Small, Numpy
 Hi and welcome! This project is an implementation of logistic regression model using polynomial feature mapping. The modeling process involved simple processing, diagnosting, and testing approach. The objective is to build a model to predict userbase purchasing decision, using small dataset (400) and Numpy.<br>
 
-<img src="https://github.com/luqmancrit/Polynomial-Logistic-Regression-Numpy-/blob/main/images/train%20set%20-%20loss%20values.png?raw=true" alt="alt text" width="600" height="250">
+<img src="https://github.com/luqmancrit/Polynomial-Logistic-Regression-Numpy-/blob/main/images/multi%20degree%20decision%20boundary.png?raw=true" alt="alt text" width="600" height="250">
 
 ## 🔮General Modeling Process
 Below is the general modeling process that will be discussed in this project. Further step of processing, training, and evaluation the model will be explained below.<br>
@@ -32,6 +32,13 @@ To ensure the model is generalized well and not overfittingthe data will be spli
 - Test set=20% 
 
 ## 🎿Model Development
+### Polynomial Degree
+The dataset clearly shows that the decision boundary is non-linear. The degree value to be choose are identified to prevent overfitting model. Below is the earlier finding degree value for decision boundary.
+
+Result: Degree 2, 3 seems generalized well. Further process will be proceeded using degree: 2, 3.
+
+<img src="https://github.com/luqmancrit/Polynomial-Logistic-Regression-Numpy-/blob/main/images/multi%20degree%20decision%20boundary.png?raw=true" alt="alt text" width="600" height="250">
+
 ### 🏂Model Training
 A benchmark for desired metrics and initial parameters has been set earlier for further process:
 
