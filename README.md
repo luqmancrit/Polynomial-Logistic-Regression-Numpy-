@@ -1,12 +1,9 @@
 # 🎛️Polynomial Logistic Regression: Regularized, Small, Numpy
 Hi and welcome! This project is an implementation of logistic regression model using polynomial feature mapping. The modeling process involved simple processing, diagnosting, and testing approach. The objective is to build a model to predict userbase purchasing decision, using small dataset (400) and Numpy.<br>
 
+The modeling process involved: `Feature Scaling` `Feature Mapping` `Feature Splitting` `Model Training` `Cross Validation` `Hyperparameter Tuning`
+
 <img src="https://github.com/luqmancrit/Polynomial-Logistic-Regression-Numpy-/blob/main/images/multi%20degree%20decision%20boundary.png?raw=true" alt="alt text" width="600" height="250">
-
-## 🔮General Modeling Process
-Below is the general modeling process that will be discussed in this project. Further step of processing, training, and evaluation the model will be explained below.<br>
-
-<img src="https://github.com/luqmancrit/Polynomial-Logistic-Regression-Numpy-/blob/main/images/general%20modeling.png?raw=true" alt="alt text" width="600" height="250">
 
 ## 📑Motivation
 Business competition is getting crowder every day. Businesses needs to keep striving and be profitable. It is crucial for companies to take advantage of the collected data, to understand the pattern of the buying customers.<br>
@@ -88,11 +85,11 @@ Observation:
 - Desired model accuracy: Yes<br>
 - Desired accuracy gap: No<br>
 
-Further development: Fine-tuning.
+Further development: Hyperparameter Tuning.
 
 <img src="https://github.com/luqmancrit/Polynomial-Logistic-Regression-Numpy-/blob/main/images/test%20set%20accuracy%201.png?raw=true" alt="alt text" width="500" height="150">
 
-## 🎚️Fine-tuning
+## 🎚️Hyperparameter Tuning
 The fine-tuning process be performed to change hyperparameters, to achieve the desired metrics Hyperparameters to be change are:
 - Lambda regularized: 0.1,0.2,0.4,0.8,1
 - Iteration: 500
@@ -107,9 +104,9 @@ Observation:
 
 <img src="https://github.com/luqmancrit/Polynomial-Logistic-Regression-Numpy-/blob/main/images/fine%20tuning%20loss%20value.png?raw=true" alt="alt text" width="1200" height="350">
 
-## 🧬Fine-tuning testing
+## 🧬Hyperparameter Tuning - Test Set
 Result:
-- Fine-tuned test set accuracy=93.75%
+- Hyperparameter tuning test set accuracy=93.75%
 - Accuracy gap=+2%
 
 Observation: 
@@ -130,7 +127,7 @@ Model Accuracy & Performance Recap:
   - Accuracy gap=+5%
   - Desired metrics=No
 
-- Fine-tuning:
+- Hyperparameter Tuning:
   - Development set (degree=2, lambda=1)=91.25%
   - Test set=93.75%
   - Accuracy gap=+2%
