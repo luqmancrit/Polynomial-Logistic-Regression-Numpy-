@@ -1,5 +1,5 @@
-# 🎛️Polynomial Logistic Regression: Regularized, Small, Numpy
-Hi and welcome! This project is an implementation of logistic regression model using polynomial feature mapping. The modeling process involved simple processing, diagnosting, and testing approach. The objective is to build a model to predict userbase purchasing decision, using small dataset (400) and Numpy.<br>
+# 🎛️User Purchase Prediction: Logistic Regression, Regularized, Small, Numpy
+Hi and welcome! This User Purchase Prediction project is a user purchase prediction model with the implementation of logistic regression model using polynomial feature mapping.The objective is to build a model to predict userbase purchasing decision, using small dataset (400) and Numpy.<br>
 
 The modeling process involved: `Feature Scaling` `Feature Mapping` `Feature Splitting` `Model Training` `Cross Validation` `Hyperparameter Tuning`
 
